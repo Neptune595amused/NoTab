@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans:ital,wght@0,700;1,700&display=swap');
+
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/Avenir-Heavy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Montserrat Nota Sans Avenir*/
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 1;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container--small {
+    max-width: 1000px;
+}
+
+/***************************************
+/* HEADER */
+.header {
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo {
+
+}
+
+.logo-img {
+
+}
+
+.logo-text {
+
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: underline;
+}
+
+
+main {
+}
+
+/**********************************
+/* WELCOME */
+
+
+.welcome {
+    padding-bottom: 50px;
+}
+
+.welcome__container {
+    position: relative;
+}
+
+.welcome__container::after {
+    content: "";
+    width: 660px;
+    height: 790px;
+
+    position: absolute;
+    right: -170px;
+    top: -240px;
+    z-index: -1;
+
+    transform: rotate(-105deg);
+
+    background-image: url(./img/bg-welcome.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.welcome__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    min-height: 700px;
+}
+
+.welcome__desc {
+
+}
+
+.welcome__title {
+    margin-bottom: 130px;
+    font-size: 64px;
+    line-height: 1.09;
+}
+
+.welcome__text {
+    position: relative;
+
+    font-size: 20px;
+    padding-left: 130px;
+    width: 380px;
+}
+
+.welcome__text::before {
+    content: "";
+    width: 125px;
+    height: 125px;
+
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+}
+
+.welcome__text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+
+    width: 130px;
+    height: 4px;
+    background-color: #fff;
+
+    transform: rotate(120deg);
+}
+
+.welcome_img {
+    width: 600px;
+    position: absolute;
+    right: -30px;
+    top: -140px;
+}
+
+.welcome__cta {
+    padding-right: 60px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome__row {
+    
+}
+
+.cta__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.cta__links {
+    display: flex;
+    gap: 30px;
+}
+
+.cta__link {
+
+}
+
+.cta__img {
+
+}
+
+
+/*********************************************
+/* MISSION */
+
+.mission {
+    padding: 150px 85px;
+    position: relative;
+}
+
+.mission__container {
+}
+
+.mission__img {
+    transform: rotate(90deg) translate(-43%);
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+}
+
+.mission__desc {
+    width: 333px;
+    margin-left: auto;
+}
+
+.mission__title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.mission__title::after {
+    content: "";
+    position: absolute;
+
+    right: 55px;
+    top: 7px;
+
+    z-index: -1;
+
+    width: 85px;
+    height: 85px;
+
+    background-color: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+}
+
+.mission__text {
+}
+
+
+/*************************************
+/* COMON */
+
+.comon {
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+/* .comon--reverse .container {
+    flex-direction: row-reverse;
+} */
+
+.comon:nth-child(even) .container {
+    flex-direction: row-reverse;
+}
+
+.comon__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.comon__img {
+
+}
+
+.comon__col {
+    max-width: 420px;
+}
+
+.comon__title {
+    margin-bottom: 20px;
+}
+
+.comon__text {
+
+}
+
+
+
+.scanner {
+    background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0)
+    56%, #000000 84%), url("./img/bar.jpg");
+    background-size: cover;
+}
+
+.code {
+    background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0)
+    56%, #000000 84%), url("./img/dj.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* FOOTER */
+
+.footer {
+}
+
+.footer__cta {
+}
+
+
+.footer__cta .cta__text {
+    font-size: 24px;
+}
+
+.footer__row {
+}
+
+.footer__content {
+}
+
+.footer__logo-link {
+}
+
+.footer__logo {
+}
+
+.footer__contact {
+}
+
+.footer__copy {
+}
+
+.footer__links {
+}
+
+.footer__link {
+}
